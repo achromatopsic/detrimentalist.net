@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: arial;
+  background-image: url("https://sadhost.neocities.org/images/tiles/smileys02.gif");
+  color: blue;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: solid 5px;
+  margin: 20px;
+}
+
+main {
+  background-color: black;
+  border: solid 5px;
+  min-height: 100vh;
+  margin-bottom: 20px;
+}
+
+header,
+main {
+  width: 80vh;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+  header img {
+    max-width: 150px;
+  }
+
+  header,
+  main {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  color: lightblue;
+}
+
+a:visited {
+  color: blue;
+}
+
+:focus {
+  outline-color: lightblue;
+}
+
+#main-nav a:hover,
+#main-nav a:focus {
+  text-decoration: none;
+  color: lightblue;
+}
+
+#main-nav a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#button-bar {
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 2px dashed blue;
+  border-bottom: 2px dashed blue;
+}
